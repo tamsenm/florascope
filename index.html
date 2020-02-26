@@ -2,27 +2,74 @@
 <html>
   <head>
     <title>florascope</title>
-    <link rel="icon" 
-      type="image/png" 
+    <link rel="icon"
+      type="image/png"
       href="https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400i&display=swap" rel="stylesheet">
     <style>
-      body {
-        background-image: url('https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/background.jpg');
+      #header {
+        background-color: #9bc964;
+        height: 15vh;
+      }
+      #header h1 {
+        font-family: 'Merriweather';
+        margin-left: 15px;
+        color: #f0f4ec;
+      }
+      #header img {
+        vertical-align: middle;
+        margin: 5px;
+      }
+      #content {
+        height: 85vh;
+        background: url('https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/background.jpg');
+        background-size: cover;
+        background-position: right bottom;
+      }
+      #content p {
+        color: #f0f4ec;
+        margin: 0;
+        padding: 0;
+      }
+      #footer {
+        background-color: #9bc964;
+        height: 30px;
+      }
+      #footer p {
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+        margin-left: 5px;
+        color: #f0f4ec;
       }
     </style>
   </head>
   <body>
-    <h1>florascope</h1>
-    <img width = "100" src = "https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png"/>
-    <form>
-      <p>When will you be planting your garden?</p>
-      <input type="radio" id="spring" name="plant-season" value="1">
-      <label for="spring">Spring</label><br>
-      <input type="radio" id="summer" name="plant-season" value="2">
-      <label for="summer">Summer</label><br>
-      <input type="radio" id="fall" name="plant-season" value="3">
-      <label for="fall">Fall</label><br>
-      <input type="submit" value="Submit">
-    </form>
+    <div id = "header">
+      <table>
+        <tr>
+          <td><img width = "75" src = "https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png"/></td>
+          <td><h1>florascope</h1></td>
+        </tr>
+      </table>
+    </div>
+    <div id = "content">
+      <p>cute little description goes here</p>
+      <!--
+      <form>
+        <p>When will you be planting your garden?</p>
+        <input type="radio" id="spring" name="plant-season" value="1">
+        <label for="spring">Spring</label><br>
+        <input type="radio" id="summer" name="plant-season" value="2">
+        <label for="summer">Summer</label><br>
+        <input type="radio" id="fall" name="plant-season" value="3">
+        <label for="fall">Fall</label><br>
+        <input type="submit" value="Submit">
+      </form>
+      !-->
+    </div>
+    <div id = "footer">
+      <p>Created by Tamsen McKerley</p>
+    </div>
   </body>
 </html>
