@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>florascope</title>
+    <link rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather:400i|Playfair+Display:500i|Rubik&display=swap" rel="stylesheet">
+    <style>
+      #header {
+        background-color: #9bc964;
+        height: 15vh;
+      }
+      #header h1 {
+        font-family: 'Merriweather';
+        margin-left: 15px;
+        color: #f0f4ec;
+      }
+      #header img {
+        vertical-align: middle;
+        margin: 5px;
+      }
+      #content {
+        height: 85vh;
+        background: url('https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/background.jpg');
+        background-size: cover;
+        background-position: right bottom;
+      }
+      #content p{
+        color: #f0f4ec;
+        margin: 0px;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        font-family: 'Fira Sans' !important;
+        max-width: 80vh;
+      }
+      #content label{
+        color: #f0f4ec;
+        font-family: 'Fira Sans' !important;
+        max-width: 80vh;
+      }
+      #options {
+        padding-left: 50px;
+      }
+      #submit {
+        margin-left: 50px;
+        margin-top: 30px;
+      }
+      #begin {
+        margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
+        font-size: 25px;
+        text-decoration: none !important;
+      }
+      #begin p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: #9bc964;
+      }
+      #footer {
+        background-color: #9bc964;
+        height: 30px;
+      }
+      #footer p {
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+        margin-left: 5px;
+        color: #f0f4ec;
+        font-family: 'Fira Sans' !important;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id = "header">
+      <table>
+        <tr>
+          <td><img width = "75" src = "https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png"/></td>
+          <td><h1>florascope</h1></td>
+        </tr>
+      </table>
+    </div>
+    <div id = "content">
+      <form>
+        <p>When will you be planting your garden?</p>
+        <div id = "options">
+          <input type="radio" id="spring" name="plant-season" value="1">
+          <label for="spring">Spring</label><br>
+          <input type="radio" id="summer" name="plant-season" value="2">
+          <label for="summer">Summer</label><br>
+          <input type="radio" id="fall" name="plant-season" value="3">
+          <label for="fall">Fall</label><br>
+        </div>
+        <p>When do you want your garden to bloom?</p>
+        <div id = "options">
+          <input type="radio" id="spring" name="plant-season" value="1">
+          <label for="spring">Spring</label><br>
+          <input type="radio" id="summer" name="plant-season" value="2">
+          <label for="summer">Summer</label><br>
+          <input type="radio" id="fall" name="plant-season" value="3">
+          <label for="fall">Fall</label><br>
+        </div>
+        <p>What are the dimensions of your garden plot?</p>
+        <div id = "options">
+          <label for="width">Width:</label><br>
+          <input type="text" id="Width" name="width"><br>
+          <label for="height">Height:</label><br>
+          <input type="text" id="height" name="height">
+        </div>
+        <input id = "submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <div id = "footer">
+      <p>Created by Tamsen McKerley</p>
+    </div>
+  </body>
+</html>
