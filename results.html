@@ -13,29 +13,12 @@
       }
       #header h1 {
         font-family: 'Merriweather';
-        margin: auto 132vh auto 15px;
+        margin-left: 15px;
         color: #f0f4ec;
-      }
-      #header h3 {
-        margin: 0px 17px;
-        color: #f0f4ec;
-        font-family: 'Fira Sans';
-      }
-      a {
-        text-decoration: none !important;
-      }
-      #about:hover {
-        background-color: #88b356;
-      }
-      #login:hover {
-        background-color: #88b356;
       }
       #header img {
         vertical-align: middle;
         margin: 5px;
-      }
-      #tagline {
-        font-size: 20px;
       }
       #content {
         height: 85vh;
@@ -43,19 +26,38 @@
         background-size: cover;
         background-position: right bottom;
       }
-      #content p {
+      #content p{
         color: #f0f4ec;
         margin: 0px;
         padding-left: 50px;
         padding-top: 50px;
+        padding-bottom: 10px;
         font-family: 'Fira Sans' !important;
         max-width: 80vh;
       }
-      #begin a{
-        font-size: 24px;
-        background-color:#9bc964;
-        padding: 10px 28px;
-        color: white;
+      #content label{
+        color: #f0f4ec;
+        font-family: 'Fira Sans' !important;
+        max-width: 80vh;
+      }
+      #options {
+        padding-left: 50px;
+      }
+      #submit {
+        margin-left: 50px;
+        margin-top: 30px;
+      }
+      #begin {
+        margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
+        font-size: 25px;
+        text-decoration: none !important;
+      }
+      #begin p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: #9bc964;
       }
       #footer {
         background-color: #9bc964;
@@ -76,19 +78,13 @@
     <div id = "header">
       <table>
         <tr>
-            <td><a href = "/index.html"><img width = "75" src = "https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png"/></a></td>
-            <td><a href = "/index.html"><h1>florascope</h1></a></td>
-          <div id = "links">
-            <td id = "about"><a href = "/about.html"><h3>About</h3><a></td>
-            <td id = "login"><a href = "/login.html"><h3>Log in</h3><a></td>
-          </div>
+          <td><img width = "75" src = "https://raw.githubusercontent.com/tamsenm/florascope/gh-pages/favicon.png"/></td>
+          <td><h1>florascope</h1></td>
         </tr>
       </table>
     </div>
     <div id = "content">
-      <p id = "tagline"><strong>Little gardens can go a long way...</strong></p>
-      <p>[cute little description goes here]</p>
-      <p id = "begin"><a href = "/florascope/questions.html">Begin</a><p>
+      
     </div>
     <div id = "footer">
       <p>Created by Tamsen McKerley</p>
